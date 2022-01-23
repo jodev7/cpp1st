@@ -1,4 +1,4 @@
-//TANLASH OPERATORI 
+//TANLASH OPERATORI 1
 
 #include <iostream>
 
