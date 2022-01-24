@@ -9,7 +9,7 @@ using namespace std;
 int main() {
 	
 
-
+	/*
 	//WHILE TAKRORLASH OPERATORI
 
 	int x, a = -1;
@@ -27,9 +27,8 @@ int main() {
 			cout << "Siz sonni topdingiz" << endl;
 			break;
 		}
-
-		
 	}
+	*/
 
 	system("pause");
 	return 0;
