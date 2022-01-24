@@ -1,4 +1,4 @@
-// N ta son ichida Min va Max algoritmi
+// Array
 
 #include <iostream>
 
@@ -8,24 +8,11 @@ using namespace std;
 
 int main() {
 	
-	int min, max, n, number;
+	int a[5] = { 1,2,3,4,5 };
 
-	cout << "N ga qiymat bering: "; cin >> n;
-
-	cout << "1-son: "; cin >> number;
-
-	min = number; max = number;
-
-	for (int i = 0; i < n-1; i++) {
-		cout << i + 2 << "-son:"; cin >> number;
-
-		if (number < min) min = number;
-		if (number > max) max = number;
+	for (int i = 0; i < 5; i++) {
+		cout << a[i] << endl;
 	}
-
-	cout << "Min: " << min << endl;
-	cout << "Max: " << max << endl;
-	
 
 	system("pause");
 	return 0;
