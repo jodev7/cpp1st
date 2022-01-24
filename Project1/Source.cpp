@@ -6,8 +6,25 @@
 
 using namespace std;
 
+int min(int a, int b) {
+	if (a < b) return a;
+	else return b;
+}
+
+int max(int a, int b) {
+	if (a > b) return a;
+	else return b;
+}
+
 int main() {
 	
+	int n, m;
+
+	cout << "N ga qiymat bering: "; cin >> n;
+	cout << "M ga qiymat bering: "; cin >> m;
+
+	cout << "Min: " << min(n, m) << endl;
+	cout << "Max: " << max(n, m) << endl;
 
 	/*
 	//WHILE TAKRORLASH OPERATORI
