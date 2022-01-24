@@ -1,39 +1,30 @@
-//TANLASH OPERATORI 1
+//SHARTSIZ O`TISH OPERATORI
 
 #include <iostream>
 
 using namespace std;
 
 int main() {
+	/*
 	int n;
-	cout << "Hafta kuni sonni yozing = "; cin >> n;
+    metka: cout << "Musbat son kiriting = "; cin >> n;
 
-	/*
-	switch (n) {
-	case 1: cout << "Dushanba" << endl; break;
-	case 2: cout << "Seshanba" << endl; break;
-	case 3: cout << "Chorshanba" << endl; break;
-	case 4: cout << "Payshanba" << endl; break;
-	case 5: cout << "Juma" << endl; break;
-	case 6: cout << "Shanba" << endl; break;
-	case 7: cout << "Yakshanba" << endl; break;
-	default: cout << "Bunday hafta kuni mavjud emas" << endl;
-	}
+	if (n > 0) cout << "Qabul qilindi" << endl;
+	else goto metka;
 	*/
 
-	
-	/*
-	switch (n) {
-	case 1: case 2: case 3: cout << "Qish" << endl; break;
-	case 4: case 5: case 6: cout << "Bahor" << endl; break;
-	case 7: case 8: case 9: cout << "Yoz" << endl; break;
-	case 10: case 11: case 12: cout << "Kuz" << endl; break;
-	}
-	*/
-	
-	//n > 0 ? cout << "manfiy" << endl : cout << "musbat" << endl;
+	int n, m;
+    metka: 
+	    cout << "Son kiriting. 1 =  "; cin >> n;
+		cout << "Son kiriting. 2 =  "; cin >> m;
 
-	n % 2 ==0 ? cout << "juft son" << endl : cout << "toq son" << endl;
+
+
+	if (m != 0) cout << n / m << endl;
+	else {
+		cout << "Bo`luvchi 0 ga teng bo`lishi mumkin emas" << endl;
+		goto metka;
+	}
 
 	system("pause");
 	return 0;
