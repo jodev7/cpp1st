@@ -1,22 +1,24 @@
-// Class - OOP
+// Abstraction - OOP
 
 #include <iostream>
 
 using namespace std;
 
-//public, private, protected
-class Person {
+//
+class BankAccount {
+	int balance = 1000;
 public:
-	void sayHi() {
-		cout << "Hello" << endl;
+	int myBalance() {
+		return balance * 9500;
 	}
 };
 
 int main() {
 
-	Person Yusuf;
+	BankAccount k;
 
-	Yusuf.sayHi();
+	cout << k.myBalance() << endl;
+	
 	
 	system("pause");
 	return 0;
