@@ -1,34 +1,22 @@
-
+// destructor
 
 #include <iostream>
-#include <stdlib.h>
-#include <time.h>
+#include <string>
+#include "Person.h"
 
 using namespace std;
 
+
+
 int main() {
-	
 
-	/*
-	//WHILE TAKRORLASH OPERATORI
+	Person *Yusuf = new Person();
 
-	int x, a = -1;
-	srand(time(NULL));
-	x = rand() % 100 + 1;
-	
-	while (a != x) {
+	Yusuf->setName("Yusuf");
 
-		cout << "O`ylagan sonni kiriting: "; cin >> a;
+	cout << Yusuf->getName() << endl;
 
-
-		if (a > x) cout << "O`ylangan sondan katta sonni kiritdingiz" << endl;
-		else if (a < x) cout << "O`ylangan sondan kichik sonni kiritdingiz" << endl;
-		else {
-			cout << "Siz sonni topdingiz" << endl;
-			break;
-		}
-	}
-	*/
+	delete Yusuf;
 
 	system("pause");
 	return 0;
