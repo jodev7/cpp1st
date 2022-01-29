@@ -1,26 +1,23 @@
-// sizeof
+// Function overloading
 
 #include <iostream>
 
 using namespace std;
 
+void printNumber(int n) {
+	cout << n << endl;
+}
 
+void printNumber(float n) {
+	cout << n << endl;
+}
 
 int main() {
-	
-	cout << "char: " << sizeof(char) << endl;
-	cout << "int: " << sizeof(int) << endl;
-	cout << "float: " << sizeof(float) << endl;
-	cout << "double: " << sizeof(double) << endl;
-	cout << "short int: " << sizeof(short int) << endl;
-	cout << "long int: " << sizeof(long int) << endl;
-	cout << "long double: " << sizeof(long double) << endl;
-	cout << "long long int: " << sizeof(long long int) << endl;
 
-
-	double arr[20]; //160 bite
-	cout << sizeof(arr) << endl;
-
+	int k = 5;
+	float b = 10.5;
+	printNumber(k);
+	printNumber(b);
 
 	system("pause");
 	return 0;
