@@ -1,23 +1,22 @@
-// Function overloading
+// Recursion function
 
 #include <iostream>
 
 using namespace std;
 
-void printNumber(int n) {
-	cout << n << endl;
-}
-
-void printNumber(float n) {
-	cout << n << endl;
+int fact(int n) {
+	if (n == 1)
+		return 1;
+	else
+		return n * fact(n - 1);
 }
 
 int main() {
 
 	int k = 5;
-	float b = 10.5;
-	printNumber(k);
-	printNumber(b);
+
+	cout << fact(k) << endl;
+	
 
 	system("pause");
 	return 0;
