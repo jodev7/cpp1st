@@ -5,8 +5,8 @@ using namespace std;
 
 class Person {
 public:
-	Person();
-	~Person();
+	Person(); //constructor
+	~Person(); // destructor
 
 	void setName(string str);
 	string getName();

@@ -5,11 +5,11 @@
 
 
 Person::Person() {
-
+	cout << "Constructor" << endl;
 }
 
 Person::~Person() {
-
+	cout << "Destructor" << endl;
 }
 
 // :: scope resolution operator

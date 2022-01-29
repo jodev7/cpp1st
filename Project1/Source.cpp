@@ -1,4 +1,4 @@
-// Classni fayllarga ajratish
+// destructor
 
 #include <iostream>
 #include <string>
@@ -10,11 +10,13 @@ using namespace std;
 
 int main() {
 
-	Person Yusuf;
+	Person *Yusuf = new Person();
 
-	Yusuf.setName("Yusuf");
+	Yusuf->setName("Yusuf");
 
-	cout << Yusuf.getName() << endl;
+	cout << Yusuf->getName() << endl;
+
+	delete Yusuf;
 
 	system("pause");
 	return 0;
