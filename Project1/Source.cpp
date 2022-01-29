@@ -1,38 +1,33 @@
-// Encapsulation (data hiding)
+// Constructor
 
 #include <iostream>
 #include <string>
 
 using namespace std;
 
-class BankAccaount {
-private:
-	int balance = 1000; //$
-	string passport = "AC0000";
-
+class MyClass {
 public:
-	void deposit(string s, int b) {
-		if (s == passport) {
-			balance += b;
-		}
+	MyClass(string str) {
+		setName(str);
 	}
 
-	void withdraw(string s, int b) {
-		if (s == passport) {
-			balance -= b;
-		}
+	void setName(string s) {
+		name = s;
 	}
+
+	string getName() {
+		return name;
+	}
+
+private:
+	string name = "Yusuf";
 };
-
 
 int main() {
 
-	BankAccaount Yusuf;
+	MyClass k("Joseph");
 
-	Yusuf.deposit("AC0000", 4000);
-	Yusuf.withdraw("AC0000", 2500);
-	
-	cout << Yusuf.balance << endl;
+	cout << k.getName() << endl;
 
 	system("pause");
 	return 0;
